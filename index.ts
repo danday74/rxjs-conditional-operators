@@ -1,4 +1,4 @@
-import { timer, filter, take, pipe, map, mergeMap, of, iif } from 'rxjs';
+import { timer, take, pipe, map } from 'rxjs';
 
 const condition = false
 
@@ -14,7 +14,7 @@ const triple = () => {
   )
 }
 
-timer(0, 100).pipe(
+timer(0, 1000).pipe(
   take(4),
   condition ? double() : triple(),
 ).subscribe(x => {
