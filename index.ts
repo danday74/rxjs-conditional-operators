@@ -16,7 +16,7 @@ const triple = () => {
 
 timer(0, 1000).pipe(
   take(4),
-  condition ? double() : triple(),
+  condition ? double() : triple()
 ).subscribe(x => {
   console.log('output', x)
 });
