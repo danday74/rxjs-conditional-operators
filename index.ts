@@ -14,7 +14,7 @@ const triple = () => {
 
 timer(0, 1000).pipe(
   take(4),
-  mergeMap(x => iif(() => x <= 1, of(x).pipe(double()), of(x).pipe(triple()))),
+  mergeMap(x => iif(() => x <= 1, of(x).pipe(double()), of(x).pipe(triple())))
 ).subscribe(x => {
   console.log('output', x)
 })
