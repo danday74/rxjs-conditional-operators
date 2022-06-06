@@ -1,4 +1,4 @@
-import { timer, take, pipe, map, tap } from 'rxjs'
+import { timer, take, pipe, map } from 'rxjs'
 
 const condition = false
 
