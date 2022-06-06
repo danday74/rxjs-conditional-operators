@@ -1,4 +1,4 @@
-import { timer, take, pipe, map } from 'rxjs';
+import { timer, take, pipe, map, tap } from 'rxjs'
 
 const condition = false
 
@@ -19,4 +19,4 @@ timer(0, 1000).pipe(
   condition ? double() : triple()
 ).subscribe(x => {
   console.log('output', x)
-});
+})
