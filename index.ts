@@ -18,5 +18,5 @@ timer(0, 100).pipe(
   take(4),
   condition ? double() : triple(),
 ).subscribe(x => {
-  console.log('hello', x)
+  console.log('output', x)
 });
